@@ -1,0 +1,62 @@
+* {
+    color: lightblue;
+}
+/* ^universal selector */
+
+h1 {
+    color: pink;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ^1 rem is default size for paragraph */
+li {
+    color: purple;
+
+    padding: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: left;
+    
+        font-family: "Truculenta", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+  }
+
+.my-colors {color:red;
+}
+/* ^mycolors is name of class, make sure to use dot for adding style to class */
+
+#outcomes {color:aquamarine;
+}
+/* ^usually dont stlye ids, usually used for like interactivity e.g. a sign in page with user and pass */
+
+[data-heading="learning"] {color: black;
+}
+/* ^attribute also usually not used to style, mainly element and class is used to style syuff */
+
+
+h1,.my-colors {color: orange;
+}
+/* ^can also style multiple elemtns and style togeter */
+
+li strong {color:brown;
+}
+
+h3 > strong {
+    color: yellow;
+}
+
+body {text-align: center;
+}
+
