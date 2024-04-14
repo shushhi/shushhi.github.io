@@ -1,0 +1,28 @@
+.outer {
+    border: 2px dashed #e5e5cb;
+    width: 400px;
+    min-height: 200px;
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .inner {
+    background-color: pink;
+    min-width: 350px;
+    min-height: 100px;
+    margin: 20px auto;
+    border: 2px solid pink;
+    padding: 10px;
+    /* line-height: 80px; */
+  }
+  
+  
+  p > strong {
+    color: aqua;
+    display: block;
+    padding: 10px;
+  }
+
+  
+  
