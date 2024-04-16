@@ -10,6 +10,8 @@ h1 {
   margin-top: 2rem;
 }
 
+/* I chose this font as it was similar to the Luniverse title font which matches the theme I have */
+
 h2 {
   color: #70aeff;
   font-size: 1.2rem;
@@ -21,15 +23,20 @@ h2 {
     border: 2px dashed #D8B4F8;
     min-width: 400px;
     min-height: 200px;
+    /* I set the sizing of everything with min-width and min-height to ensure no text is cut off */
     padding: 10px;
     display: grid;
+    /* I chose to display as a grid as there were multiple columns and rows used */
     gap: 2rem;
     margin: 20px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,1fr);
+    /* This shows the number of rows and columns I used */
     justify-content: space-between;
+    /* I chose space between so the gap between each box was even */
     align-content: center;
     font-family: "Overpass", sans-serif;
+    /* This font matched the cutesy theme I have going on, similar to the Luniverse website */
   }
   
   .inner {
@@ -72,14 +79,21 @@ h2 {
     text-align: center;
   }
   
+  /* The colours I chose for the boxes are similar to the colour theme in Luniverse */
+  
   p > strong {
     display: block;
     padding: 10px;
     font-weight: bold;
   }
 
+  /* I added display block so the question was on a separate line to the answers
+  and I made it bold so it stands out */
+
   ul {
     list-style-type: none;
   }
+
+  /* This was to remove the dots in the list */
 
 
