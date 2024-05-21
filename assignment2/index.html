@@ -1,0 +1,142 @@
+<!-- For this assignment I have chosen the context of crafting tutorial video
+
+I have used this Seymour One font as it looks quite artsy which matches the theme
+I am going for. The Barlow font is also an easy to read but not too boring font.
+
+I have made a list that lets users know the materials required to create the windmill.
+This way users can see if they have all the materials needed before starting the video,
+making it more convenient.
+
+Then I have created a section with 7 buttons. Each has a timestamp within the video
+that skips to certain steps.
+
+I have also added 4 other buttons; a mute button, a replay button and a button to increase
+and decrease the volume which is all added within the customs controls div -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Seymour+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+  
+    <header>
+      <h1>How to make homemade windmill</h1>
+    </header>
+
+    <main class="container">
+        <h2>MATERIALS</h2>
+            <ul>
+                <li>- Sheets of foam </li>
+                <li>- Scissors</li>
+                <li>- Glue dots</li>
+                <li>- Ruler</li>
+                <li>- Pen</li>
+                <li>- Paper straws</li>
+                <li>- Pipe cleaners</li>
+                <li>- Glue stick</li>
+            </ul>
+        <h2>STEP BY STEP</h2>
+    
+        <section class="timeline">
+            <button id="materials-button"> Materials </button>
+            <button id="step-1-button"> Step 1 </button>
+            <button id="step-2-button"> Step 2 </button>
+            <button id="step-3-button"> Step 3 </button>
+            <button id="step-4-button"> Step 4 </button>
+            <button id="step-5-button"> Step 5 </button>
+            <button id="tip-button"> Quick Tip </button>
+        </section>
+
+      <!-- Media Player Section -->
+      <div class="media-player">
+        <video id="custom-video-player" controls> 
+          <source
+            src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="custom-controls">
+          <button id="play-pause-btn" onclick="togglePlayPause()">
+            <img
+              id="play-pause-img"
+              src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+              alt="Play Button"
+              width="24"
+              height="24"
+            />
+          </button>
+         
+          <!-- add the missing buttons or functionality here -->
+          <button id="mute-unmute-button">
+            <img
+                id="mute-unmute-img"
+                src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+                alt="Mute Unmute Button"
+                width="24"
+                height="24"
+                />
+         </button>
+          <div class="progress-bar">
+            <span id="progress-bar-fill"></span>
+          </div>
+        
+         <button id="decrease-volume-button">
+            <img
+              id="decrease-volume-img"
+              src="https://img.icons8.com/ios-glyphs/30/low-volume.png"
+              alt="Decrease volume Button"
+              width="24"
+              height="24"
+            />
+          </button>
+          <button id="increase-volume-button">
+            <img
+              id="increase-volume-img"
+              src="https://img.icons8.com/ios-glyphs/30/high-volume--v1.png"
+              alt="Increase volume Button"
+              width="24"
+              height="24"
+            />
+          </button>
+         <button id="replay-button">
+            <img
+                id="replay-img"
+                src="https://img.icons8.com/ios-glyphs/30/replay.png"
+                alt="Replay Button"
+                width="24"
+                height="24"
+                />
+         </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Media Player Website. All rights reserved.</p>
+      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/91635/no-audio">Mute</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/91644/replay">Replay</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/91634/low-volume">Decrease Volume</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/59734/audio">Increase Volume</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      
+    </footer>
+  </body>
+</html>
