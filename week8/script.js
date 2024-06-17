@@ -2,7 +2,7 @@
 // myVideo contains the video i am working with
 const myVideo = document.querySelector("#my-video");
 console.log(myVideo);
-myVideo.removeAttribute("controls");
+// myVideo.removeAttribute("controls");
 
 const playPauseButton = document.querySelector("#play-pause-button");
 console.log(playPauseButton);
