@@ -1,3 +1,5 @@
+// This function allows the drop down menu to be displayed when 
+// clicking the profile icon
 const profileButton = document.querySelector("#my-profile");
 console.log(profileButton);
 
@@ -11,7 +13,8 @@ function toggleContent() {
   profileContent.classList.toggle("show");
 }
 
-
+// This function allows the drop down menu to be displayed when 
+// clicking the shopping cart icon
 const cartButton = document.querySelector("#my-cart");
 console.log(cartButton);
 
